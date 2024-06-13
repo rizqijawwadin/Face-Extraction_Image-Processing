@@ -27,7 +27,7 @@ cd Face-Extraction_Image-Processing/
 code .
 ```
 #### Install library OpenCV
-install the library first, you can type this in the terminal
+Install the library first, you can type this in the terminal
 ```bash
 pip install numpy opencv-python
 ```
@@ -39,7 +39,7 @@ Change the address of the image file you want to extract
 image = cv2.imread('C:/Users/Yee/Desktop/Aberdeen/paul14.jpg') # change this part
 ```
 #### Configuration
-change the iteration in the following section to find the best result
+Change the iteration in the following section to find the best result
 ```py
 # erode
 skin_mask = cv2.erode(skin_mask, kernel, iterations=2) # change this part to erode
