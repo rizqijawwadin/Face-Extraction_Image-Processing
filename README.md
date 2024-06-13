@@ -36,7 +36,7 @@ pip install numpy opencv-python
 #### Preparing
 Change the address of the image file you want to extract
 ```py
-image = cv2.imread('C:/Users/Yeeeee/Desktop/Aberdeen/paul14.jpg') # change this part
+image = cv2.imread('C:/Users/Yee/Desktop/Aberdeen/paul14.jpg') # change this part
 ```
 #### Configuration
 change the iteration in the following section to find the best result
