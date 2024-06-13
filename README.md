@@ -38,6 +38,14 @@ Change the address of the image file you want to extract
 ```py
 image = cv2.imread('C:/Users/Yeeeee/Desktop/Aberdeen/paul14.jpg') # change this part
 ```
+#### Configuration
+change the iteration in the following section to find the best result
+```py
+# erode
+skin_mask = cv2.erode(skin_mask, kernel, iterations=2) # change this part to erode
+# dilate
+skin_mask = cv2.dilate(skin_mask, kernel, iterations=2) # change this part to dilate
+```
 #### Run the script
 If you use Visual Studio Code, you can use ```F5```, or if you use the terminal you can run the following command :
 ```bash
