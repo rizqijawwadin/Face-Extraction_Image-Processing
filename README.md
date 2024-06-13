@@ -45,3 +45,39 @@ python3 FaceExtraction.py
 ```
 
 ## Example Results
+The first step involves converting the image color model from RGB to HSV :
+<div align="center">
+  <img src="example result/Screenshot 2024-06-11%20160242.png" height="300">
+  <img src="example result/Screenshot 2024-06-13%20140223.png" height="300">
+  <img src="example result/Screenshot 2024-06-13%20140508.png" height="300">
+</div>
+The second step involves processing the image using the thresholding method to separate facial features from other objects based on differences in brightness levels using the HSV value :
+<div align="center">
+  <img src="example result/Screenshot 2024-06-11 160259.png" height="300">
+  <img src="example result/Screenshot 2024-06-13 141022.png" height="300">
+  <img src="example result/Screenshot 2024-06-13 140638.png" height="300">
+</div>
+The third step involves processing the thresholded image morphologically using the Erode function to eliminate small noise generated during the thresholding stage :
+<div align="center">
+  <img src="example result/Screenshot 2024-06-11 160311.png" height="300">
+  <img src="example result/Screenshot 2024-06-13 140245.png" height="300">
+  <img src="example result/Screenshot 2024-06-13 140704.png" height="300">
+</div>
+The fourth step involves processing the eroded image to thicken certain objects :
+<div align="center">
+  <img src="example result/Screenshot 2024-06-11 160322.png" height="300">
+  <img src="example result/Screenshot 2024-06-13 140343.png" height="300">
+  <img src="example result/Screenshot 2024-06-13 140744.png" height="300">
+</div>
+The fifth step involves processing the dilated image using Gaussian Blur to fill in the remaining small gaps :
+<div align="center">
+  <img src="example result/Screenshot 2024-06-11 160343.png" height="300">
+  <img src="example result/Screenshot 2024-06-13 140403.png" height="300">
+  <img src="example result/Screenshot 2024-06-13 140819.png" height="300">
+</div>
+The final step involves using the extracted features from the previous stages to create a mask, resulting in a visual output that only includes the areas within the mask :
+<div align="center">
+  <img src="example result/Screenshot 2024-06-11 160351.png" height="300">
+  <img src="example result/Screenshot 2024-06-13 135954.png" height="300">
+  <img src="example result/Screenshot 2024-06-13 140910.png" height="300">
+</div>
