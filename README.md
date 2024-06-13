@@ -55,9 +55,9 @@ python3 FaceExtraction.py
 ## Example Results
 The first step involves converting the image color model from RGB to HSV :
 <div align="center">
-  <img src="example result/Screenshot 2024-06-11%20160242.png" height="300">
-  <img src="example result/Screenshot 2024-06-13%20140223.png" height="300">
-  <img src="example result/Screenshot 2024-06-13%20140508.png" height="300">
+  <img src="example result/Screenshot 2024-06-11%20160242.png" height="275">
+  <img src="example result/Screenshot 2024-06-13%20140223.png" height="275">
+  <img src="example result/Screenshot 2024-06-13%20140508.png" height="275">
 </div>
 The second step involves processing the image using the thresholding method to separate facial features from other objects based on differences in brightness levels using the HSV value :
 <div align="center">
